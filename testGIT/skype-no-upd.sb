@@ -1,0 +1,5 @@
+(version 1)
+(deny network* (remote udp "*:*"))
+(allow network* )
+(allow default)
+; all|allow
