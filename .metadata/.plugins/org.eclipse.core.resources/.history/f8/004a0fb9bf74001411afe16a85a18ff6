@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<%@ include file ="staticContent.jsp" %>
+<br>
+<% out.print(name); %>
+<% out.print(name2); %>
+<br>
+<jsp:include page="dynamicContent.jsp"></jsp:include>
+
+<!-- place to see how to call a page dynamically at the run time -->
+
+<%
+	String id = request.getParameter("id");
+%>
+	<% if (id == 1) { %>
+	<jsp:include page="pageOne.jsp"></jsp:include>
+	
+	<% } else %>
+	<jsp:include page="pageTwo.jsp"></jsp:include>
+
+
+</body>
+</html>

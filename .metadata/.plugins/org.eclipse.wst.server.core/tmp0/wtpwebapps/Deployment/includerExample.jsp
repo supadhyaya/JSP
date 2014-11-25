@@ -11,8 +11,22 @@
 
 <%@ include file ="staticContent.jsp" %>
 <br>
+<% out.print(name); %>
+<% out.print(name2); %>
+<br>
 <jsp:include page="dynamicContent.jsp"></jsp:include>
 
+<!-- place to see how to call a page dynamically at the run time -->
+
+<%
+	int id = Integer.parseInt(request.getParameter("id"));
+%>
+	<% if (id == 1) { %>
+	<jsp:include page="pageOne.jsp"></jsp:include>
+	<% } else { %>
+	
+	<jsp:include page="pageTwo.jsp"></jsp:include>
+	<% } %>
 
 
 </body>

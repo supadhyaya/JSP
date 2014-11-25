@@ -14,7 +14,7 @@
 	Date newDt = new Date(); 
 	out.print(newDt.toGMTString() );
 	
-	
+	String name1 = "cant retrieve the name";
 %>
 
 </body>
