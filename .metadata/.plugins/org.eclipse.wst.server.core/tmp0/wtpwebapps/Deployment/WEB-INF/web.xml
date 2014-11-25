@@ -17,11 +17,9 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
-    <url-pattern>/fuckOff!!</url-pattern>
+    <url-pattern>/Deployment</url-pattern>
   </servlet-mapping>
-  
-  
-   <servlet>
+  <servlet>
     <servlet-name>Login</servlet-name>
     <jsp-file>/loginPage.jsp</jsp-file>
   </servlet>
@@ -29,6 +27,14 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/logingarneThauMuji</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <description></description>
+    <display-name>parameterSnatcher</display-name>
+    <servlet-name>parameterSnatcher</servlet-name>
+    <servlet-class>demo.parameterSnatcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>parameterSnatcher</servlet-name>
+    <url-pattern>/parameterSnatcher</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,0 +1,11 @@
+package demo;
+
+public class Greeting {
+	
+	public String sayHello() {
+		return "I am being called from inside of the class called Greeting , \n this is "
+				+ "an example showing how a java method can be called from jsp after importing \n"
+				+ "the appropriate files using @page import tags";
+	}
+
+}
